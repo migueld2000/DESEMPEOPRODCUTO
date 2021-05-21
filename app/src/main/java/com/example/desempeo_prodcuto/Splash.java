@@ -17,7 +17,7 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        cancion=MediaPlayer.create(this,R.raw.Friendships);
+        cancion=MediaPlayer.create(this,R.raw.spektrem);
         cancion.start();
 
         TimerTask inicio=new TimerTask() {
@@ -29,6 +29,6 @@ public class Splash extends AppCompatActivity {
             }
         };
         Timer tiempo=new Timer();
-        tiempo.schedule(inicio,8000);
+        tiempo.schedule(inicio,4000);
     }
 }

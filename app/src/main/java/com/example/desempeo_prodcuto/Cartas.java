@@ -1,6 +1,8 @@
 package com.example.desempeo_prodcuto;
 
-public class Cartas {
+import java.io.Serializable;
+
+public class Cartas implements Serializable {
     String nombre;
     String informacionCarta;
     int fotoCarta;

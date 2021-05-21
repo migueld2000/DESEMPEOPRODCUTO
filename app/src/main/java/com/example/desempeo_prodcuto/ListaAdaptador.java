@@ -1,5 +1,6 @@
 package com.example.desempeo_prodcuto;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,13 +47,21 @@ public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHold
             nombre=itemView.findViewById(R.id.nombre);
             informacion=itemView.findViewById(R.id.informacion);
             foto=itemView.findViewById(R.id.foto);
+
         }
 
         public void actualizarDatos(Cartas cartas) {
             nombre.setText(cartas.getNombre());
             informacion.setText(cartas.getInformacionCarta());
             foto.setImageResource(cartas.getFotoCarta());
-
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(itemView.getContext(),MainActivity.class);
+                    intent.putExtra("datocarta",cartas);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

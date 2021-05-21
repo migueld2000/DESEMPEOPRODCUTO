@@ -28,18 +28,8 @@ public class Home extends AppCompatActivity
     }
     private void crear_listado()
     {
-        lista_targetas.add(new Cartas("Zipaquirá","Zipaquirá es un municipio de Colombia ubicado en el " +
-                "departamento de Cundinamarca, en la provincia de Sabana Centro, de la que es la capital y sede de su diócesis." +
-                " Se encuentra a 29 km de Bogotá, de la cual hace parte de su área metropolitana, Con una población de 126 4094" +
-                " habitantes, es el segundo municipio más grande y poblado de la provincia. Es uno de los centros de explotación" +
-                " de sal más importantes en Colombia, razón por la cual también es conocida como la Capital Salinera de Colombia " +
-                "por su producción de sal.",R.drawable.Zipaquirá));
-        lista_targetas.add(new Cartas("Sancocho de gallina","Una sopa preparada con pollo, papa y plátano," +
-                "y papas en salmuera, que son papas conservadas en agua con sal y azúcar.",R.drawable.sancocho_de_gallina));
-        lista_targetas.add(new Cartas("Catedral de sal","Nombrada Primera Maravilla de Colombia en 2007. " +
-                "La catedral está construida en una mina subterránea de sal y tiene varias esculturas hechas con este mineral. " +
-                "Se pueden tomar tours guíados por la catedral, ver un video 3D para aprender sobre la mina, comprar souvenirs e " +
-                "incluso comer algunos aperitivos bajo tierra. Existe también el tour la Ruta del Minero, el cual te permite " +
-                "experimentar el trabajo de los mineros reales. ",R.drawable.catedral_sal));
+        lista_targetas.add(new Cartas("Zipaquirá",getString(R.string.Descripcion1),R.drawable.zipaquira));
+        lista_targetas.add(new Cartas("Sancocho de gallina",getString(R.string.Descripcion2),R.drawable.sancocho_de_gallina));
+        lista_targetas.add(new Cartas("Catedral de sal",getString(R.string.Descripcion3),R.drawable.catedral_sal));
     }
 }
