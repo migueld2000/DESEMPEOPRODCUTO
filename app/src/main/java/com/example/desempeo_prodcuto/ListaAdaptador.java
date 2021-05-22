@@ -54,11 +54,12 @@ public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHold
             nombre.setText(cartas.getNombre());
             informacion.setText(cartas.getInformacionCarta());
             foto.setImageResource(cartas.getFotoCarta());
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent=new Intent(itemView.getContext(),MainActivity.class);
-                    intent.putExtra("datocarta",cartas);
+                    intent.putExtra("datosTargeta",cartas);
                     itemView.getContext().startActivity(intent);
                 }
             });
