@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         carta=(Cartas)getIntent().getSerializableExtra("datosTargeta");
-        foto=findViewById(R.id.foto);
-        nombre=findViewById(R.id.nombre);
-        informacion=findViewById(R.id.informacion);
+        foto=findViewById(R.id.fotomain);
+        nombre=findViewById(R.id.nombremain);
+        informacion=findViewById(R.id.informacionmain);
 
         foto.setImageResource(carta.getFotoCarta());
         nombre.setText(carta.getNombre());

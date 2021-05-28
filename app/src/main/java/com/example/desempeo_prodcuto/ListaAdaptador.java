@@ -45,14 +45,14 @@ public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHold
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             nombre=itemView.findViewById(R.id.nombre);
-            informacion=itemView.findViewById(R.id.informacion);
+            //informacion=itemView.findViewById(R.id.informacion);
             foto=itemView.findViewById(R.id.foto);
 
         }
 
         public void actualizarDatos(Cartas cartas) {
             nombre.setText(cartas.getNombre());
-            informacion.setText(cartas.getInformacionCarta());
+            //informacion.setText(cartas.getInformacionCarta());
             foto.setImageResource(cartas.getFotoCarta());
 
             itemView.setOnClickListener(new View.OnClickListener() {
