@@ -10,4 +10,23 @@
     <string name="Descripcion3">Nombrada Primera Maravilla de Colombia en 2007. La catedral está construida
         en una mina subterránea de sal y tiene varias esculturas hechas con este mineral. Se pueden tomar
         tours guíados por la catedral.</string>
+    <string name="opcion1">Datos de cundinamarca</string>
+    <string name="opcion2">Datos curiosos</string>
+    <string name="Descripcion_menu1">
+        Características del Departamento de Cundinamarca:
+
+        Superficie: 24.210 Km2.Población: 2.721.368
+        Año de creación: 1886.
+        Gentilicio: Cundinamarqués
+        Capital: Santafé de Bogotá 8.314.305 habitantes.
+        Principales municipios: La Vega, Girardot, Guaduas, Facatativa, Fusagasugá, Cáqueza, Zipaquirá, Ubaté, Villeta.
+
+        Limites:
+        Por el norte con los departamentos de Boyacá y Meta; al sur con los departamentos de Meta,
+        Huila y Tolima y por el occidente con el río Magdalena que lo separa de los departamentos de
+        Tolima y Caldas.
+
+
+    </string>
+
 </resources>
