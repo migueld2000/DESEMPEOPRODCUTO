@@ -5,11 +5,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Home extends AppCompatActivity
 {
@@ -28,6 +30,19 @@ public class Home extends AppCompatActivity
         crear_listado();
         ListaAdaptador adaptador=new ListaAdaptador(lista_targetas);
         listado_grafico.setAdapter(adaptador);
+    }
+
+    //Cambio de idioma
+    public void cambiarIdioma(String lenguaje)
+    {
+        Locale idioma=new Locale(lenguaje);//tipo de dato que recibe el lenguaje a configurar en el celular
+        Locale.setDefault(idioma);//establese el lenjuaga del telefono a otro
+
+        Configuration configuraciontelefono=getResources().getConfiguration();
+        configuraciontelefono.locale=idioma;
+        getBaseContext().getResources().updateConfiguration(configuraciontelefono,
+                getBaseContext().getResources().getDisplayMetrics());
+
     }
 
     //Metodo encargado de mostrar el menu
@@ -54,6 +69,18 @@ public class Home extends AppCompatActivity
                 Intent intent2=new Intent(Home.this,Economia.class);
                 startActivity(intent2);
                 break;
+
+                case(R.id.opcion3):
+                    cambiarIdioma("es");
+                    Intent intent3=new Intent(Home.this,Home.class);
+                    startActivity(intent3);
+                    break;
+            case(R.id.opcion4):
+                cambiarIdioma("en");
+                Intent intent4=new Intent(Home.this,Home.class);
+                startActivity(intent4);
+                break;
+
         }
         return  super.onOptionsItemSelected(item);
     }

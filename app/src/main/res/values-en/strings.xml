@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PERFORMANCE-PRODUCT</string>
+    <string name="Descripcion1">It is located 29 km from Bogotá, of which it is part of its area
+         metropolitan, with a population of 126 4094 inhabitants, it is the second largest municipality and
+         town of the province. It is one of the most important salt exploitation centers in Colombia,
+         reason why it is also known as the Salt Capital of Colombia for its production of
+         Salt.</string>
+    <string name="Descripcion2">A soup made with chicken, potato and banana, and potatoes in brine, which are potatoes
+         preserved in water with salt and sugar .</string>
+    <string name="Descripcion3">Named First Wonder of Colombia in 2007. The cathedral is built
+         in an underground salt mine and has several sculptures made with this mineral. Can be taken
+         guided tours of the cathedral.</string>
+
+    <string name="opcion1">Cundinamarca data</string>
+    <string name="opcion2">Economy</string>
+    <string name="opcion3">Spanish</string>
+    <string name="opcion4">English</string>
+
+
+    <string name="opcion1_subtitulo1">
+        Data from the Department of Cundinamarca:
+    </string>
+    <string name="opcion1_descripcion1">
+        Surface: 24.210 Km2.
+        <br></br>
+        Population: 2.721.368
+        <br></br>
+        Year of creation: 1886.
+        <br></br>
+        Demonym: Cundinamarqués
+        <br></br>
+        Capital: Santafé de Bogotá 8,314,305 inhabitants.
+        <br></br>
+        Main municipalities: La Vega, Girardot, Guaduas, Facatativa, Fusagasugá, Cáqueza,
+        Zipaquirá, Ubaté, Villeta.
+        <br></br>
+        Limits: To the north with the departments of Boyacá and Meta; to the south with the departments of Meta,
+        Huila and Tolima and to the west with the Magdalena River that separates it from the departments of
+        Tolima and Caldas.
+        <br></br>
+        Physiography: The territory corresponds to the Eastern Cordillera that penetrates from the south
+         forming the Páramo de Sumapaz; Its middle part presents the plateau of the Sabana de
+         Bogota; and further north the valley of Ubaté and Simijaca. The flat and warm sectors of the
+         department are the Magdalena valley and the part of the Eastern Plains.
+        <br></br>
+        Hydrography: Magdalena Guavio Suampuez, Humaca and Negro Rivers. Lagoons and dam; Guatavita,
+         Chingaza, Fúquene, Neusa, Sisga, Chisacá, La Regadera and El Hato.
+    </string>
+    <string name="opcion2_subtitulo1">Economy</string>
+    <string name="opcion2_descripcion1">
+        The most outstanding natural resources are coal and salt, mainly in
+         Zipaquirá, Nemocón and Tausa. It also has lime, iron, sulfur, emeralds, quartz,
+         lead, plaster, copper and marble.
+        <br></br>
+        The main agricultural products are coffee, corn, sugar cane, potato, barley, wheat,
+         cassava, cotton, rice, beans and fruits, the department is the first producer of sugarcane
+         panelera sugar of the country. The dairy is highly developed especially in the Savannah
+         from Bogotá and in the valley of Ubaté.
+    </string>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792455643050",
+    "project_id": "cundinamarca-d8309",
+    "storage_bucket": "cundinamarca-d8309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792455643050:android:f8cf0d3ea6f2e49203b5d3",
+        "android_client_info": {
+          "package_name": "com.example.desempeo_prodcuto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792455643050-p3f3jfsqn1nj3s9rav4avejearv7dks0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiXiifhE61TjmvYNy7x6abeN3wXeXOFh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792455643050-p3f3jfsqn1nj3s9rav4avejearv7dks0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
