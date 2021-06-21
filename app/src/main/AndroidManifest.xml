@@ -13,7 +13,6 @@
         android:theme="@style/Theme.DESEMPEÑOPRODCUTO">
         <activity android:name=".Economia"></activity>
         <activity android:name=".Datos_de_cundinamarca" />
-        <activity android:name=".Mas_de_zipaquira" />
         <activity android:name=".Home" />
         <activity android:name=".Splash">
             <intent-filter>

@@ -1,5 +1,6 @@
 package com.example.desempeo_prodcuto;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,6 +11,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -17,6 +26,7 @@ public class Home extends AppCompatActivity
 {
     ArrayList<Cartas> lista_targetas=new ArrayList<>();
     RecyclerView listado_grafico;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
