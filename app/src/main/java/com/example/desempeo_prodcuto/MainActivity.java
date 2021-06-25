@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         nombre=findViewById(R.id.nombremain);
         informacion=findViewById(R.id.informacionmain);
 
-        foto.setImageResource(carta.getFotoCarta());
+        //foto.setImageResource(carta.getFotoCarta());
         nombre.setText(carta.getNombre());
         informacion.setText(carta.getInformacionCarta());
     }

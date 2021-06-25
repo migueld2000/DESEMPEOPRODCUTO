@@ -5,9 +5,9 @@ import java.io.Serializable;
 public class Cartas implements Serializable {
     String nombre;
     String informacionCarta;
-    int fotoCarta;
+    String fotoCarta;
 
-    public Cartas(String nombre, String informacionCarta, int fotoCarta) {
+    public Cartas(String nombre, String informacionCarta, String fotoCarta) {
         this.nombre = nombre;
         this.informacionCarta = informacionCarta;
         this.fotoCarta = fotoCarta;
@@ -29,11 +29,11 @@ public class Cartas implements Serializable {
         this.informacionCarta = informacionCarta;
     }
 
-    public int getFotoCarta() {
+    public String getFotoCarta() {
         return fotoCarta;
     }
 
-    public void setFotoCarta(int fotoCarta) {
+    public void setFotoCarta(String fotoCarta) {
         this.fotoCarta = fotoCarta;
     }
 }

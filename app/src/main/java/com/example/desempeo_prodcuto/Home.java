@@ -10,6 +10,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,7 +27,7 @@ public class Home extends AppCompatActivity
 {
     ArrayList<Cartas> lista_targetas=new ArrayList<>();
     RecyclerView listado_grafico;
-
+    FirebaseFirestore baseDatos = FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -97,8 +98,28 @@ public class Home extends AppCompatActivity
 
     private void crear_listado()
     {
-        lista_targetas.add(new Cartas("Zipaquirá",getString(R.string.Descripcion1),R.drawable.zipaquira));
-        lista_targetas.add(new Cartas("Sancocho de gallina",getString(R.string.Descripcion2),R.drawable.sancocho_de_gallina));
-        lista_targetas.add(new Cartas("Catedral de sal",getString(R.string.Descripcion3),R.drawable.catedral_sal));
+        baseDatos.collection("Cundinamarca")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull @NotNull Task<QuerySnapshot> task) {
+                        if(task.isSuccessful()){
+
+                            for(QueryDocumentSnapshot document :task.getResult()){
+                                String nombre=document.get("nombre").toString();
+                                String foto=document.get("foto").toString();
+
+                                lista_targetas.add(new Cartas(nombre,"prueba",foto));
+
+                            }
+                            ListaAdaptador adaptador=new ListaAdaptador(lista_targetas);
+                            listado_grafico.setAdapter(adaptador);
+
+                        }else{
+                            Toast.makeText(Home.this, "Error", Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
     }
 }

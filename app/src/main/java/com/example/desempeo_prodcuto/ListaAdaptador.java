@@ -10,9 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
-public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHolder> {
+public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHolder>
+{
     ArrayList<Cartas>listado;
 
     public ListaAdaptador(ArrayList<Cartas> listado) {
@@ -53,16 +56,11 @@ public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHold
         public void actualizarDatos(Cartas cartas) {
             nombre.setText(cartas.getNombre());
             //informacion.setText(cartas.getInformacionCarta());
-            foto.setImageResource(cartas.getFotoCarta());
+            //foto.setImageResource(cartas.getFotoCarta());
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent=new Intent(itemView.getContext(),MainActivity.class);
-                    intent.putExtra("datosTargeta",cartas);
-                    itemView.getContext().startActivity(intent);
-                }
-            });
+            Picasso.with(itemView.getContext())
+                    .load(cartas.getFotoCarta())
+                    .into(foto);
+            };
         }
-    }
 }
